@@ -20,7 +20,7 @@ My approach throughout was to use my existing GitLab and Jenkins experience as t
 
 ### Round 1 — Go's Build Model (Mapping Java/Python to Go)
 
-**My frame:** Java needs a JVM, Python needs an interpreter. I knew Go compiled but wasn't sure where the runtime dependency lived. Claude confirmed Go compiles to a self-contained native binary — no runtime layer needed on the target machine. Also clarified `go get` (adds new deps) vs `go mod download` (pulls existing deps — what CI should use), and added `go vet` as a free built-in static analyzer worth including.
+**My frame:** Java needs a JVM, Python needs an interpreter. I knew Go "runs anywhere" but wasn't sure where the runtime dependency lived. Claude confirmed Go compiles to a self-contained native binary — no runtime layer needed on the target machine. Also clarified `go get` (adds new deps) vs `go mod download` (pulls existing deps — what CI should use), and added `go vet` as a free built-in static analyzer worth including.
 
 
 ---
